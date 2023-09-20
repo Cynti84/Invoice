@@ -7,13 +7,13 @@ public class InvoiceCreator {
 		String date = "9/17/2023";
 		String address = "Cynthia Njoki";
 		String contactNumber = "0100100100";
-		int quantity=4;
-		String itemDescription = "Sample Item";
-		double unitPrice = 10.99;
-		double amount = quantity * unitPrice;
-		double subTotal = amount;
-		double vat = subTotal * 0.16;
-		double totalAmount = subTotal + vat;
+		int quantity;
+		String itemDescription;
+		double unitPrice;
+		double amount;
+		double subTotal;
+		//double vat = subTotal * 0.16;
+		//double totalAmount = subTotal + vat;
 		
 		
 		System.out.println("***********************Adamson Compuuters Ltd*************************");
@@ -31,17 +31,23 @@ public class InvoiceCreator {
 		
 		
 		System.out.println("\n\n------------------------------------------------------------------------------");
+		
 		System.out.println("Qty \t | \t Item Description \t | \t Unit price \t | \t Amount");
+		quantity = 4; unitPrice = 20; itemDescription = "Pencil"; amount = quantity * unitPrice;
 		System.out.println("------------------------------------------------------------------------------");
-		System.out.println("4 \t |\t pencil \t\t |\t 20 \t\t |\t 80.00");
+		System.out.println(quantity+ " \t |\t" +itemDescription+ "\t\t\t |\t" +unitPrice+ "\t\t |\t" +amount );
 		System.out.println("------------------------------------------------------------------------------");
-		System.out.println("10 \t |\t Duster \t\t |\t 50 \t\t |\t 500.00");
+		quantity = 10; unitPrice = 50; itemDescription = "ruler"; amount = quantity * unitPrice;
+		System.out.println(quantity+ "\t |\t" +itemDescription+ "\t\t\t |\t" +unitPrice+ "\t\t |\t" +amount);
 		System.out.println("------------------------------------------------------------------------------");
-		System.out.println("9 \t |\t pens \t\t\t |\t 30 \t\t |\t 270.00");
+		quantity = 9; unitPrice = 30; itemDescription = "pens"; amount = quantity * unitPrice;
+		System.out.println(quantity+ "\t |\t" +itemDescription+ "\t\t\t |\t" +unitPrice+ "\t\t |\t" +amount);
 		System.out.println("------------------------------------------------------------------------------");
-		System.out.println("10 \t |\t Crayon \t\t |\t 80 \t\t |\t 800.00");
+		quantity = 10; unitPrice = 80; itemDescription = "crayon"; amount = quantity * unitPrice;
+		System.out.println(quantity+ "\t |\t" +itemDescription+ "\t\t\t |\t" +unitPrice+ "\t\t |\t" +amount);
 		System.out.println("------------------------------------------------------------------------------");
-		System.out.println("\t\t\t\t\t\t|Subtotal   \t| 1650.00");
+		subTotal = amount;
+		System.out.println("\t\t\t\t\t\t|Subtotal   \t|" +subTotal);
 		System.out.println("\t\t\t\t\t\t--------------------------------");
 		System.out.println("\t\t\t\t\t\t|VAT (16%)   \t| 264.00");
 		System.out.println("\t\t\t\t\t\t--------------------------------");
